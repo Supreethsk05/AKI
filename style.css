@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpeg'); /* Replace with the path to your image */
+    background-size: cover; /* This will ensure that the image covers the whole page */
+    background-position: center; /* This will center the image in the page */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-attachment: fixed; 
+    color: #ddd;
+}
+
+#aki {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.draggable {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#metrics-container {
+    border-top: 20px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.metric {
+    margin-bottom: 20px;
+}
+
+.percentage-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #ddd;
+    margin-top: 5px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+.heart { background-color: #ff6666;
+color: black; }
+.brain { background-color: #9999ff; }
+.stress { background-color: #e74c3c; }
+.smile { background-color: #f4d03f; }
+.voice { background-color: #58d68d; }
+.happiness { background-color: pink; }
+
+#state {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    border-top: 100px;
+}
+#heart{
+    color: black;
+}
+
+#state img {
+    display: none; /* Hide state images by default */
+    max-width: 100px;
+}
+#heart span, #heart img {
+    color: black; /* Changes the color of the text within the heart div to black */
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Metrics Interaction</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div id="aki"><img src="aki.png" alt="aki" width="100" height="100"></div>
+    <div id="girl" class="draggable"><img src="girl.png" alt="Girl" width="100" height="100"></div>
+    <div id="metrics-container">
+        <div id="heart" class="metric">
+            <img src="heart.png" alt="Heart" width="30" height="30">
+            Heart: <span id="heartPercent">0%</span>
+            <div class="percentage-bar"><div id="heartFill" class="fill heart"></div></div>
+        </div>
+        <div id="brain" class="metric">
+            <img src="brain.png" alt="Brain" width="30" height="30">
+            Brain: <span id="brainPercent">100%</span>
+            <div class="percentage-bar"><div id="brainFill" class="fill brain"></div></div>
+        </div>
+        <div id="stress" class="metric">
+            <img src="stress.png" alt="Stress" width="30" height="30">
+            Stress: <span id="stressPercent">100%</span>
+            <div class="percentage-bar"><div id="stressFill" class="fill stress"></div></div>
+        </div>
+        <div id="smile" class="metric">
+            <img src="smile.png" alt="Smile" width="30" height="30">
+            Smile: <span id="smilePercent">0%</span>
+            <div class="percentage-bar"><div id="smileFill" class="fill smile"></div></div>
+        </div>
+        <div id="voice" class="metric">
+            <img src="voice.png" alt="Voice" width="30" height="30">
+            Voice: <span id="voicePercent">100%</span>
+            <div class="percentage-bar"><div id="voiceFill" class="fill voice"></div></div>
+        </div>
+        <div id="happiness" class="metric">
+            <img src="happiness.png" alt="Happiness" width="30" height="30">
+            Happiness: <span id="happinessPercent">0%</span>
+            <div class="percentage-bar"><div id="happinessFill" class="fill happiness"></div></div>
+        </div>
+       
+    </div>
+    <div id="state">
+        <img src="neutral.png" alt="Neutral State" id="stateImage"/>
+        <span id="stateValue"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
